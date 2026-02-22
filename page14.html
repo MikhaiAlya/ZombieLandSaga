@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>⑭ SAGA ARENA</title>
 
     <style>
@@ -16,17 +17,9 @@
         }
 
         @keyframes bgMove {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .book {
@@ -47,24 +40,19 @@
             margin-bottom: 30px;
         }
 
-        /* 左右レイアウト */
         .content {
             display: flex;
             gap: 30px;
             align-items: flex-start;
-            /* ★ これが重要 */
         }
 
-        /* 左：文章 */
         .text-area {
             width: 55%;
             font-size: 18px;
             line-height: 1.8;
             word-break: break-all;
-            /* ★ 長いURLもはみ出さない */
         }
 
-        /* 右：画像 */
         .image-area {
             width: 45%;
             display: flex;
@@ -72,28 +60,16 @@
             gap: 15px;
         }
 
-        /* リンク装飾 */
+        .image-area img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
         .text-area a {
             color: #ff1493;
             font-weight: bold;
         }
 
-        /* 右：画像 */
-        .image-area {
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .image-area {
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        /* 戻るボタン */
         .back-area {
             text-align: center;
             margin-top: 30px;
@@ -115,6 +91,28 @@
             transform: scale(1.1);
             background: linear-gradient(to right, #ff1493, #ff66b2);
         }
+
+        /* 📱 スマホ対応（page1と同じ） */
+        @media (max-width: 600px) {
+            .book {
+                width: auto;
+                margin: 20px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+
+            .text-area,
+            .image-area {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -124,7 +122,6 @@
         <h1>⑭ SAGA ARENA</h1>
 
         <div class="content">
-            <!-- 左：説明文 -->
             <div class="text-area">
                 <p>
                     こちらはSAGA ARENAです。<br>
@@ -136,7 +133,8 @@
                     あのシーンは感動的ですね。。。<br>
                     さくらのマンホールもあるみたいなので写真撮りましょう！
                 </p>
-                <p style="margin-top: 120px;">
+
+                <p>
                     ▶ SAGA ARENA 公式サイト：
                     <a href="https://saga-sunrisepark.com/arena/" target="_blank">
                         SAGA ARENA
@@ -144,7 +142,6 @@
                 </p>
             </div>
 
-            <!-- 右：画像 -->
             <div class="image-area">
                 <img src="sagaarena.jpg" alt="SAGA ARENA">
                 <img src="sakura.webp" alt="さくらのマンホール">
