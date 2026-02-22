@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>① 唐津市ふるさと会館アルピノ</title>
 
+    <!-- ★ スマホ対応に必須 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             margin: 0;
@@ -16,23 +19,16 @@
         }
 
         @keyframes bgMove {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .book {
-            width: 900px;
-            margin: 60px auto;
-            padding: 40px;
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
             background: white;
             border-radius: 20px;
             box-shadow: 0 0 40px rgba(255, 105, 180, 0.6);
@@ -41,30 +37,25 @@
 
         h1 {
             text-align: center;
-            font-size: 32px;
+            font-size: 28px;
             color: #ff1493;
             text-shadow: 2px 2px 0 #fff, 4px 4px 8px rgba(255, 105, 180, 0.5);
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
-        /* 左右レイアウト */
         .content {
             display: flex;
-            gap: 30px;
+            gap: 20px;
             align-items: flex-start;
-            /* ★ これが重要 */
         }
 
-        /* 左：文章 */
         .text-area {
             width: 55%;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.8;
-            word-break: break-all;
-            /* ★ 長いURLもはみ出さない */
+            word-break: break-word;
         }
 
-        /* 右：画像 */
         .image-area {
             width: 45%;
             display: flex;
@@ -72,31 +63,19 @@
             gap: 15px;
         }
 
-        /* リンク装飾 */
+        .image-area img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
         .text-area a {
             color: #ff1493;
             font-weight: bold;
         }
 
-        /* 右：画像 */
-        .image-area {
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .image-area {
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        /* 戻るボタン */
         .back-area {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
         .back-button {
@@ -106,7 +85,7 @@
             padding: 12px 25px;
             border-radius: 25px;
             font-weight: bold;
-            box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
+            box-shadow: 0 4px 10px rgba(255,105,180,0.4);
             transition: 0.3s;
             display: inline-block;
         }
@@ -114,6 +93,22 @@
         .back-button:hover {
             transform: scale(1.1);
             background: linear-gradient(to right, #ff1493, #ff66b2);
+        }
+
+        /* ★ スマホ用レイアウト */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .text-area,
+            .image-area {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
         }
     </style>
 </head>
@@ -124,7 +119,6 @@
         <h1>① 唐津市ふるさと会館アルピノ</h1>
 
         <div class="content">
-            <!-- 左：説明文 -->
             <div class="text-area">
                 <p>
                     こちらは唐津市ふるさと会館です。<br>
@@ -143,9 +137,8 @@
                 </p>
             </div>
 
-            <!-- 右：画像 -->
             <div class="image-area">
-                <img src="furusato.png" alt="佐賀駅の外観">
+                <img src="furusato.png" alt="唐津市ふるさと会館アルピノ">
             </div>
         </div>
 
