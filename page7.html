@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- ★① スマホで正しく縮む -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>⑦ cafemoka</title>
 
     <style>
@@ -16,23 +19,17 @@
         }
 
         @keyframes bgMove {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
+        /* ★② 幅を固定 → 可変 */
         .book {
-            width: 900px;
-            margin: 60px auto;
-            padding: 40px;
+            max-width: 900px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 20px;
             background: white;
             border-radius: 20px;
             box-shadow: 0 0 40px rgba(255, 105, 180, 0.6);
@@ -52,19 +49,15 @@
             display: flex;
             gap: 30px;
             align-items: flex-start;
-            /* ★ これが重要 */
         }
 
-        /* 左：文章 */
         .text-area {
             width: 55%;
             font-size: 18px;
             line-height: 1.8;
             word-break: break-all;
-            /* ★ 長いURLもはみ出さない */
         }
 
-        /* 右：画像 */
         .image-area {
             width: 45%;
             display: flex;
@@ -72,28 +65,16 @@
             gap: 15px;
         }
 
-        /* リンク装飾 */
+        .image-area img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
         .text-area a {
             color: #ff1493;
             font-weight: bold;
         }
 
-        /* 右：画像 */
-        .image-area {
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .image-area {
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        /* 戻るボタン */
         .back-area {
             text-align: center;
             margin-top: 30px;
@@ -115,6 +96,26 @@
             transform: scale(1.1);
             background: linear-gradient(to right, #ff1493, #ff66b2);
         }
+
+        /* ★③ スマホ時は縦並び */
+        @media screen and (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .text-area,
+            .image-area {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .text-area {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 
@@ -132,9 +133,6 @@
                     幸太郎が食べていたこの美味しそうないちごパフェだけは絶対に食べなくては！！<br>
                 </p>
 
-                <p>
-                    
-                </p>
                 <p>
                     ▶ cafemoka 公式サイト：
                     <a href="https://www.oomuraya.co.jp/kurashikanko/cafe-moka/" target="_blank">
