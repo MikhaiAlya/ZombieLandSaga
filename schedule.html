@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ゾンビランドサガ聖地巡礼ツアー 予定表</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
+            background: linear-gradient(135deg, #ff9ecf, #ff66b2, #ffb3e6);
+            background-size: 400% 400%;
+            animation: bgMove 10s ease infinite;
+        }
+
+        @keyframes bgMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .book {
+            width: 800px;
+            margin: 60px auto;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(255, 105, 180, 0.6);
+            border: 5px solid #ff66b2;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 34px;
+            color: #ff1493;
+            text-shadow: 2px 2px 0 #fff, 4px 4px 8px rgba(255, 105, 180, 0.5);
+            margin-bottom: 30px;
+        }
+
+        details {
+            margin-bottom: 20px;
+            border: 2px solid #ffd6f0;
+            border-radius: 15px;
+            background: #fff8fc;
+            padding: 10px 15px;
+        }
+
+        summary {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ff1493;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .schedule-table th,
+        .schedule-table td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #ffd6f0;
+        }
+
+        .schedule-table th {
+            width: 120px;
+            color: #ff1493;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        .schedule-table tr:hover {
+            background: #fff0f8;
+        }
+
+        /* ★ 今の予定のハイライト */
+        .current {
+            background: #ff66b2 !important;
+            color: white;
+            font-weight: bold;
+        }
+
+        .back-area {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .back-button {
+            text-decoration: none;
+            background: linear-gradient(to right, #ff66b2, #ff1493);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(to right, #ff1493, #ff66b2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="book">
+
+        <h1>ツアー予定表</h1>
+
+        <details>
+            <summary>2月28日</summary>
+            <table class="schedule-table">
+                <tr>
+                    <th>6:00</th>
+                    <td>新大阪駅 集合（朝ごはんなどは新幹線乗る前に調達）</td>
+                </tr>
+                <tr>
+                    <th>6:25</th>
+                    <td>新大阪駅（出発）</td>
+                </tr>
+                <tr>
+                    <th>9:19</th>
+                    <td>新鳥栖駅（到着）<br>※到着後トヨタレンタカー新鳥栖駅前店でレンタカーを借りる（9:30予約）</td>
+                </tr>
+                <tr>
+                    <th>9:30</th>
+                    <td>トヨタレンタカー新鳥栖駅前店（出発）</td>
+                </tr>
+                <tr>
+                    <th>11:30</th>
+                    <td>唐津市ふるさと会館アルピノ（到着）</td>
+                </tr>
+                <tr>
+                    <th>11:30-12:00</th>
+                    <td>唐津市ふるさと会館アルピノ（観光）（余裕あれば唐津駅北口も）</td>
+                </tr>
+                <tr>
+                    <th>12:00</th>
+                    <td>唐津市ふるさと会館アルピノ（出発）</td>
+                </tr>
+                <tr>
+                    <th>12:45</th>
+                    <td>杉ノ原展望台（到着）</td>
+                </tr>
+                <tr>
+                    <th>12:45-13:30</th>
+                    <td>杉ノ原展望台（観光）</td>
+                </tr>
+                <tr>
+                    <th>13:30</th>
+                    <td>杉ノ原展望台（出発）</td>
+                </tr>
+                <tr>
+                    <th>14:00</th>
+                    <td>どこかで昼食</td>
+                </tr>
+                <tr>
+                    <th>15:30</th>
+                    <td>伊万里リバティホテル（到着）&チェックイン</td>
+                </tr>
+                <tr>
+                    <th>15:40</th>
+                    <td>伊万里リバティホテル（出発）</td>
+                </tr>
+                <tr>
+                    <th>16:30</th>
+                    <td>佐賀県立宇宙科学館 ゆめぎんが（到着）</td>
+                </tr>
+                <tr>
+                    <th>16:30-19:00</th>
+                    <td>佐賀県立宇宙科学館 ゆめぎんが（観光）※18:00~プラネタリウム</td>
+                </tr>
+                <tr>
+                    <th>19:00</th>
+                    <td>佐賀県立宇宙科学館 ゆめぎんが（出発）</td>
+                </tr>
+                <tr>
+                    <th>19:45</th>
+                    <td>ドライブイン鳥 伊万里本店（到着）</td>
+                </tr>
+                <tr>
+                    <th>19:45-22:00</th>
+                    <td>ドライブイン鳥 伊万里本店（夕食）</td>
+                </tr>
+                <tr>
+                    <th>22:00</th>
+                    <td>ドライブイン鳥 伊万里本店（出発）</td>
+                </tr>
+                <tr>
+                    <th>22:15</th>
+                    <td>伊万里リバティホテル（到着）</td>
+                </tr>
+                <tr>
+                    <th>23:30</th>
+                    <td>就寝</td>
+                </tr>
+            </table>
+        </details>
+
+        <details>
+            <summary>3月1日</summary>
+            <table class="schedule-table">
+                <tr>
+                    <th>7:30-8:30</th>
+                    <td>起床 朝食など</td>
+                </tr>
+                <tr>
+                    <th>8:30</th>
+                    <td>伊万里リバティホテル（出発）</td>
+                </tr>
+                <tr>
+                    <th>9:00</th>
+                    <td>武雄温泉 新館（到着）</td>
+                </tr>
+                <tr>
+                    <th>9:00-10:00</th>
+                    <td>武雄温泉 新館（観光）</td>
+                </tr>
+                <tr>
+                    <th>10:00</th>
+                    <td>武雄温泉 新館（出発）</td>
+                </tr>
+                <tr>
+                    <th>10:10</th>
+                    <td>武雄温泉物産館（到着）</td>
+                </tr>
+                <tr>
+                    <th>10:10-10:45</th>
+                    <td>武雄温泉物産館（観光）</td>
+                </tr>
+                <tr>
+                    <th>10:45</th>
+                    <td>武雄温泉物産館（出発）</td>
+                </tr>
+                <tr>
+                    <th>11:15</th>
+                    <td>cafemoka（到着）</td>
+                </tr>
+                <tr>
+                    <th>11:15-12:30</th>
+                    <td>cafemoka （昼食）※いちごパフェは絶対</td>
+                </tr>
+                <tr>
+                    <th>12:30</th>
+                    <td>cafemoka（出発）</td>
+                </tr>
+                <tr>
+                    <th>13:30</th>
+                    <td>鹿島ガタリンピック（到着）</td>
+                </tr>
+                <tr>
+                    <th>13:30-14:30</th>
+                    <td>鹿島ガタリンピック（観光）</td>
+                </tr>
+                <tr>
+                    <th>14:30</th>
+                    <td>鹿島ガタリンピック（出発）</td>
+                </tr>
+                <tr>
+                    <th>14:45</th>
+                    <td>大魚神社 海中鳥居（到着）</td>
+                </tr>
+                <tr>
+                    <th>14:45-15:30</th>
+                    <td>大魚神社 海中鳥居（観光）※さくらのマンホール</td>
+                </tr>
+                <tr>
+                    <th>15:30</th>
+                    <td>大魚神社 海中鳥居（出発）</td>
+                </tr>
+                <tr>
+                    <th>17:00</th>
+                    <td>伊万里市民図書館（到着）</td>
+                </tr>
+                <tr>
+                    <th>17:00-17:30</th>
+                    <td>伊万里市民図書館（観光）</td>
+                </tr>
+                <tr>
+                    <th>17:30</th>
+                    <td>伊万里市民図書館（出発）</td>
+                </tr>
+                <tr>
+                    <th>17:40</th>
+                    <td>伊万里リバティホテル（到着）</td>
+                </tr>
+                <tr>
+                    <th>17:40-19:00</th>
+                    <td>休憩</td>
+                </tr>
+                <tr>
+                    <th>19:00</th>
+                    <td>伊万里リバティホテル（出発）</td>
+                </tr>
+                <tr>
+                    <th>19:15</th>
+                    <td>ドライブイン鳥 伊万里本店（到着）</td>
+                </tr>
+                <tr>
+                    <th>19:15-21:30</th>
+                    <td>ドライブイン鳥 伊万里本店（夕食）</td>
+                </tr>
+                <tr>
+                    <th>21:30</th>
+                    <td>ドライブイン鳥 伊万里本店（出発）</td>
+                </tr>
+                <tr>
+                    <th>21:45</th>
+                    <td>伊万里リバティホテル（到着）</td>
+                </tr>
+                <tr>
+                    <th>22:30-23:30</th>
+                    <td>イライラゴッドフィールド</td>
+                </tr>
+                <tr>
+                    <th>24:00</th>
+                    <td>キレて就寝</td>
+                </tr>
+            </table>
+        </details>
+
+        <details>
+            <summary>3月2日</summary>
+            <table class="schedule-table">
+                <tr>
+                    <th>9:00-10:00</th>
+                    <td>起床 朝食など</td>
+                </tr>
+                <tr>
+                    <th>10:00</th>
+                    <td>伊万里リバティホテル（出発）</td>
+                </tr>
+                <tr>
+                    <th>11:00</th>
+                    <td>紺野純子が轢いた交差点</td>
+                </tr>
+                <tr>
+                    <th>12:00</th>
+                    <td>モラージュ佐賀（到着）</td>
+                </tr>
+                <tr>
+                    <th>12:00-12:30</th>
+                    <td>モラージュ佐賀（観光）</td>
+                </tr>
+                <tr>
+                    <th>12:30</th>
+                    <td>モラージュ佐賀（出発）</td>
+                </tr>
+                <tr>
+                    <th>12:45</th>
+                    <td>駿河屋 佐大通り店（到着）</td>
+                </tr>
+                <tr>
+                    <th>12:45-13:15</th>
+                    <td>駿河屋 佐大通り店（観光）</td>
+                </tr>
+                <tr>
+                    <th>13:15</th>
+                    <td>駿河屋 佐大通り店（出発）</td>
+                </tr>
+                <tr>
+                    <th>13:30</th>
+                    <td>SAGA ARENA（到着）</td>
+                </tr>
+                <tr>
+                    <th>13:30-16:00</th>
+                    <td>SAGA ARENA 佐賀市内（観光）&周辺で昼食 ※シシリアンライスあれば</td>
+                </tr>
+                <tr>
+                    <th>16:00</th>
+                    <td>佐賀市内（出発）</td>
+                </tr>
+                <tr>
+                    <th>17:00</th>
+                    <td>新鳥栖駅付近（到着）</td>
+                </tr>
+                <tr>
+                    <th>18:00</th>
+                    <td>レンタカー返却</td>
+                </tr>
+                <tr>
+                    <th>18:30</th>
+                    <td>新鳥栖駅（出発）</td>
+                </tr>
+                <tr>
+                    <th>21:26</th>
+                    <td>新大阪駅（到着）&解散</td>
+                </tr>
+            </table>
+        </details>
+
+        <div class="back-area">
+            <a href="index.html" class="back-button">目次へ戻る</a>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const now = new Date();
+                const nowMonth = now.getMonth() + 1;
+                const nowDay = now.getDate();
+
+                const detailsList = document.querySelectorAll("details");
+
+                detailsList.forEach(detail => {
+                    const summaryText = detail.querySelector("summary").textContent;
+
+                    const match = summaryText.match(/(\d+)月(\d+)日/);
+                    if (!match) return;
+
+                    const month = parseInt(match[1]);
+                    const day = parseInt(match[2]);
+
+                    if (month === nowMonth && day === nowDay) {
+                        detail.open = true;
+                    }
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>
