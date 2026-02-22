@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- ★ スマホ用 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>⑥ 武雄温泉物産館</title>
 
     <style>
@@ -29,14 +32,17 @@
             }
         }
 
+        /* ★ 幅を固定 → 可変 */
         .book {
-            width: 900px;
-            margin: 60px auto;
-            padding: 40px;
+            max-width: 900px;
+            width: 100%;
+            margin: 40px auto;
+            padding: 30px;
             background: white;
             border-radius: 20px;
             box-shadow: 0 0 40px rgba(255, 105, 180, 0.6);
             border: 5px solid #ff66b2;
+            box-sizing: border-box;
         }
 
         h1 {
@@ -52,7 +58,6 @@
             display: flex;
             gap: 30px;
             align-items: flex-start;
-            /* ★ これが重要 */
         }
 
         /* 左：文章 */
@@ -61,7 +66,6 @@
             font-size: 18px;
             line-height: 1.8;
             word-break: break-all;
-            /* ★ 長いURLもはみ出さない */
         }
 
         /* 右：画像 */
@@ -70,27 +74,19 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+        }
+
+        /* ★ 画像がはみ出さない */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
 
         /* リンク装飾 */
         .text-area a {
             color: #ff1493;
             font-weight: bold;
-        }
-
-        /* 右：画像 */
-        .image-area {
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .image-area {
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
         }
 
         /* 戻るボタン */
@@ -115,13 +111,29 @@
             transform: scale(1.1);
             background: linear-gradient(to right, #ff1493, #ff66b2);
         }
+
+        /* ★ スマホ用 */
+        @media screen and (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .text-area,
+            .image-area {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="book">
 
-        <h1>⑤ 武雄温泉物産館</h1>
+        <h1>⑥ 武雄温泉物産館</h1>
 
         <div class="content">
             <!-- 左：説明文 -->
@@ -132,9 +144,6 @@
                     出てこないけど、ゾンビランドサガのグッズがたくさんあるらしい...？<br>
                 </p>
 
-                <p>
-                    
-                </p>
                 <p>
                     ▶ 武雄温泉物産館 公式サイト：
                     <a href="https://takeo-onsen-bussankan.com/" target="_blank">
