@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ゾンビランドサガ聖地巡礼ツアー</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
+
+    /* キラキラピンク背景 */
+    background: linear-gradient(135deg, #ff9ecf, #ff66b2, #ffb3e6);
+    background-size: 400% 400%;
+    animation: bgMove 10s ease infinite;
+}
+
+/* 背景ゆらゆらアニメーション */
+@keyframes bgMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.book {
+    width: 800px;
+    margin: 60px auto;
+    padding: 50px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(255, 105, 180, 0.6);
+    border: 5px solid #ff66b2;
+}
+
+h1 {
+    text-align: center;
+    font-size: 34px;
+    color: #ff1493;
+    text-shadow: 2px 2px 0 #fff, 4px 4px 8px rgba(255,105,180,0.5);
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ff66b2;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: #ff1493;
+    background: linear-gradient(to right, #ffe6f5, #ffffff);
+    padding: 15px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(255,105,180,0.3);
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+li a:hover {
+    transform: scale(1.05);
+    background: #ffd6f0;
+}
+
+/* 下部ボタンエリア（左右配置） */
+.bottom-area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* 共通ボタン */
+.bottom-button {
+    text-decoration: none;
+    background: linear-gradient(to right, #ff66b2, #ff1493);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(255,105,180,0.4);
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.bottom-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #ff1493, #ff66b2);
+}
+</style>
+</head>
+
+<body>
+<div class="book">
+
+    <h1>ゾンビランドサガ聖地巡礼ツアー</h1>
+    <h2>目次</h2>
+
+    <ul>
+        <li><a href="page1.html">① 唐津市ふるさと会館アルピノ</a></li>
+        <li><a href="page2.html">② 杉ノ原展望台</a></li>
+        <li><a href="page3.html">③ 佐賀県立宇宙科学館 ゆめぎんが</a></li>
+        <li><a href="page4.html">④ ドライブイン鳥 伊万里本店</a></li>
+        <li><a href="page5.html">⑤ 武雄温泉新館</a></li>
+        <li><a href="page6.html">⑥ 武雄温泉物産館</a></li>
+        <li><a href="page7.html">⑦ cafemoka </a></li>
+        <li><a href="page8.html">⑧ 鹿島ガタリンピック </a></li>
+        <li><a href="page9.html">⑨ 大魚神社 海中鳥居 </a></li>
+        <li><a href="page10.html">⑩ 伊万里市民図書館 </a></li>
+        <li><a href="page11.html">⑪ 純子が轢いた交差点 </a></li>
+        <li><a href="page12.html">⑫ モラージュ佐賀</a></li>
+        <li><a href="page13.html">⑬ 駿河屋 佐大通り店</a></li>
+        <li><a href="page14.html">⑭ SAGA ARENA</a></li>
+    </ul>
+
+    <div class="bottom-area">
+        <a href="schedule.html" class="bottom-button">予定表</a>
+        <a href="map.html" class="bottom-button">佐賀マップ</a>
+    </div>
+
+</div>
+</body>
+</html>
