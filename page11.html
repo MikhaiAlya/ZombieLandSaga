@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- ★ スマホで正しく縮む -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>⑪ 純子が轢いた交差点</title>
 
     <style>
@@ -16,17 +19,9 @@
         }
 
         @keyframes bgMove {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .book {
@@ -52,7 +47,6 @@
             display: flex;
             gap: 30px;
             align-items: flex-start;
-            /* ★ これが重要 */
         }
 
         /* 左：文章 */
@@ -61,7 +55,6 @@
             font-size: 18px;
             line-height: 1.8;
             word-break: break-all;
-            /* ★ 長いURLもはみ出さない */
         }
 
         /* 右：画像 */
@@ -70,27 +63,18 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+        }
+
+        .image-area img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
 
         /* リンク装飾 */
         .text-area a {
             color: #ff1493;
             font-weight: bold;
-        }
-
-        /* 右：画像 */
-        .image-area {
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .image-area {
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
         }
 
         /* 戻るボタン */
@@ -114,6 +98,28 @@
         .back-button:hover {
             transform: scale(1.1);
             background: linear-gradient(to right, #ff1493, #ff66b2);
+        }
+
+        /* ★ スマホ対応（page1と同じ） */
+        @media (max-width: 600px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .text-area,
+            .image-area {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .book {
+                width: auto;
+                margin: 20px;
+                padding: 20px;
+            }
         }
     </style>
 </head>
